@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .world {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 80vh;
+        background-color: #ffff00;
+        gap: 0.5rem;
+
+        /* 얼마나 멀리있는 시점으로 볼것인지 */
+        /* MDN: z=0 평면과 사용자 사이의 거리 */
+        /* 가까이 갈수록 3d효과가 강해짐 */
+        perspective: 100px;
+      }
+      .card {
+        width: 100px;
+        height: 150px;
+        border-radius: 0.5rem;
+        background-color: red;
+      }
+      .card:nth-of-type(1) {
+        /* 요소기준 perspective */
+        /* transform: perspective(100px) rotateY(45deg); */
+        transform: rotateY(45deg);
+      }
+      .card:nth-of-type(2) {
+        transform: translateZ(-50px);
+      }
+      .card:nth-of-type(3) {
+        transform: rotateY(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="world">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>
