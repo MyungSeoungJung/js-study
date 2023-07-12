@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let schedule = {};
+
+      alert(isEmpty(schedule)); // true
+
+      schedule["8:30"] = "get up";
+
+      alert(isEmpty(schedule)); // false
+
+      for (let sch in schedule) {
+        alert(isEmpty(schedule)); // true
+      }
+    </script>
+  </body>
+</html>

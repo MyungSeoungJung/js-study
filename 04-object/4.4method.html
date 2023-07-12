@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = {
+        name: "john",
+        age: 20,
+        // sayHi: function () {
+        //   alert("안녕하세요");
+        // },
+
+        // 단축표기법
+        sayHi() {
+          alert("안녕하세요");
+        },
+      };
+      // 속성추가(속성이 함수)
+      // user.sayHi = function () {
+      //   alert("안녕하세요");
+      // };
+      // user.sayHi();
+
+      function sayHi() {
+        alert(this.name);
+      }
+
+      // this의값은 런타임에 결정된다
+      // 컨텍스트에 따라달라짐
+
+      // sayHi를 실행하는 구조
+      // window.sayHi();
+      // 함수 실행 컨텍스트(문맥)가 window
+      // 이때의 this는 window
+      sayHi();
+
+      // user.sayHi();
+      // 함수 실행 컨텍스트(문맥)가 user객체
+      // 이떄의 this는 user객체
+    </script>
+  </body>
+</html>

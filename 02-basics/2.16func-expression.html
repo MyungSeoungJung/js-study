@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 함수 선언식
+      //변수에 함수를 생성해서 할당
+      // let sayHi = function () {
+      //   alert("Hello");
+      // };
+
+      // console.log(sayHi);
+
+      // let func = sayHi;
+      // func;
+      // sayHi;
+
+      function ask(question, yes, no) {
+        let result = confirm(question);
+        if (result) {
+          // 확인 클릭 = true
+          //매개변수로 받은 yes
+          if (typeof yes === "function") {
+            yes();
+            // 문자열이면 yes
+          } else if (typeof yes === "string") {
+            alert("yes");
+          }
+        }
+      }
+      function showOkay() {
+        alert("동의하셨습니다.");
+      }
+
+      ask("동의하십니까?", showOkay);
+      ask("동의하십니까?", "동의");
+      // 익명함수(anonymous funtion),인라인함수
+      ask("동의하십니까?", function () {
+        alert("동의하셨습니다");
+      });
+
+      // 콜백(callback):함수의 매개변수로 넘기는 함수 나중에 호출하기 위해서
+    </script>
+  </body>
+</html>

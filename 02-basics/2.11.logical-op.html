@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 0;
+      let b = "abc";
+
+      //   ||: 첫번째 truthy를 "반환"
+      // 자바스크립트에 0은 falsy로 판단
+      // c <- b (c = b)
+      // const c = a || b;
+
+      //단락평가 (short - circuit evalution)
+      // const d = b || a;
+
+      function getName() {
+        return "";
+      }
+      getName() || alert("이름 값이 없습니다");
+
+      // && 첫번째 falsy값을 "반환"
+      const e = a && b;
+      alert(e);
+
+      // boolean 값으로 변환 = !!
+      // !값 = 반대 boolean
+      // !!값 = 평가와 동일한 boolean
+      alert(!a);
+      alert(!!a);
+    </script>
+  </body>
+</html>

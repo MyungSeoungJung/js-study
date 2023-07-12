@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //javascrpit에서는 === strict requla만 쓴다
+      //== 서로 자료형이 다르면 형변환
+      alert(0 == false);
+      // === 자료형이 다르면 무조건 false 자료형까지판단
+      // 자료형이 같을때만 true인지 판단
+      alert(0 === false); //false
+      alert(0 === 0); //true
+      alert(flase === flase); //true
+      alert(0 === 1); //flase
+
+      alert(0 !== false); //true;
+      alert(0 != flase); //flase
+
+      // 자바스크립트에서는 기본값을 0,"", false,true 이런 값으로
+      //   null,undefined 이런 걸로하면 버그발생 가능성 존재
+
+      /* 빈값으로 변수선언할때
+      let a = "";
+      let b = 0;
+      let c = false;
+      const obj = {};
+      const arr = [];
+      */
+
+      // 예외처리 코드 -> 초기화
+      // if(typeof a === "undefined") {
+      //   a == "";
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let user = new Object(); // 빈객체로 초기화 (잘 안씀)
+
+      //  객체를 상수로 선언 = 다른 객체로 덮혀씌워지는 것을 방지
+      // 속성값 추가,변경 이런 건 상관 없음
+      const user = {
+        //처음부터 할당
+        // 속성(key,property) : 값
+        name: "john", //<- 속성
+        age: 30,
+      };
+
+      // 속성값 접근
+      // 객체변수명.속성명
+      console.log(user.name);
+
+      // 속성 추가
+      user.isAdmin = true;
+      console.log(user);
+
+      // 속성 삭제
+      delete user.age;
+      console.log(user);
+
+      // 속성값 변경
+      user.name = "peter";
+
+      // 상수라서 다른 객체 대입 불가 , 초기화 불가
+      // user = { phone: "010-5445-14223" };
+
+      // 대괄호를 이용하여 객체 속성에 접근 할 수 있다
+      console.log(user["name"]);
+      console.log(delete user["isAdmin"]);
+      console.log(user);
+
+      let prop = "name";
+
+      let fruit = prompt("어떤 과일을 구매하시겠습니까?", "apple");
+      let bag = {};
+      // 변수 fruit을 사용해 프로퍼티 이름을 만들었습니다.
+      bag[fruit] = 5;
+
+      // 객체 생성 문법 - {}. 객체를 생성해서 변수에 대입
+      // return {...},
+      function makeUser(name, age) {
+        // name,age속성이 있는 객체를 생성해서 반환
+        return {
+          // 속성명하고 값 변수명이동일
+
+          name: name,
+          age: age,
+        };
+      }
+
+      // const makeUser1(name,age) => {
+
+      //   name: name,
+
+      // }
+
+      let u = makeUser("john", 32);
+      console(makeUser);
+      console(u);
+
+      // in연산자로 속성 존재여부 확인
+      // key in object
+      console.log("age" in u);
+
+      // for(속성명 변수 in 객체 변수)
+      for (prop in u) {
+        // prop: 객체의 속성명이 prop변수에 들어가면서 객체 속성 개수만큼 반복
+        // 탐색 순서는 속성을 추가한 순서대로
+      }
+    </script>
+  </body>
+</html>

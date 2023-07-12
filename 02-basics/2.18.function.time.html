@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 선언이 뒤에 있는데, 앞쪽에 사용을한다?
+      // 브라우저 내부적으로 최상단에 선언됨
+      // 호이스팅(hosting): 끌어올린다
+      //선언만 된건지 초기화가 된 것은 아님
+      //ex: let sayHi2;
+
+      sayHi("명승정");
+      sayHi2("명승정");
+
+      function sayHi(name) {
+        alert(`Hello, ${name}`);
+      }
+      let sayHi2 = function (name) {
+        alert(`Hello, ${name}`);
+      };
+    </script>
+  </body>
+</html>

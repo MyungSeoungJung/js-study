@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="width: 100vw; height: 100vh">
+    <script>
+      document.querySelector("body").addEventListener("click", function () {
+        alert("아따 반갑쏘잉");
+        //this: 함수를 호출한 객체(엘리먼트)
+        // this가 (문맥)상황에 따라서 바뀜
+        console.log(this);
+      });
+
+      document.querySelector("body").addEventListener("click", () => {
+        console.log("--화살표 함수");
+        console.log(this);
+      });
+
+      // function Hello(){
+      //   Hello();
+      // }
+      // window 객체가 Hello() 이것을 호출
+
+      //함수 표현식
+
+      // let sum = function (a, b) {
+      //   return a + b;
+      // };
+
+      // //화살표 함수 1줄 이상 쓸거면 {}
+      // const sum2 = (a, b) => {
+      //   const result = a + b;
+      //   return result;
+      // };
+
+      // //화살표 함수
+      // //표현식에 구문이 1개라면 구문의 결과가 return값이다
+      // let sum3 = (a, b) => a + b;
+      // let findMax = (a, b) => (a > b ? a : b);
+      // alert(sum3(1, 2));
+      // alert(findMax(3, 8));
+
+      // // 화살표 함수 문제
+      // //함수 표현식을 사용해서 function을 쓸 필요가 없음
+      // let ask = (question, yes, no) => {
+      //   if (confirm(question)) {
+      //     yes();
+      //   } else {
+      //     no();
+      //   }
+      // };
+
+      // // 메소드 호출, (매소드 매겨변수)
+      // ask(
+      //   "동의하십니까?",
+      //   () => alert("동의하셨습니다."),
+      //   () => alert("취소 버튼을 누르셨습니다.")
+      // );
+
+      let a = +prompt("a?", "");
+
+      switch (a) {
+        case 0:
+          alert(0);
+          break;
+        case 1:
+          alert(1);
+          break;
+        case 2:
+        case 3:
+          alert("2,3");
+      }
+    </script>
+  </body>
+</html>
