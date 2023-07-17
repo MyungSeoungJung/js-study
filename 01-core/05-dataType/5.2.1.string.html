@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "Widget with id";
+
+      // 문자열 인덱스(위치) 반환
+      alert(str.indexOf("Widget")); // 0
+      alert(str.indexOf("widget")); // -1
+
+      alert(str.indexOf("id")); // 1
+      // 특정 위치부터 찾기
+      alert(str.indexOf("id", 2)); // 12
+
+      if (str.indexOf("id") > -1) {
+        console.log("해당 문자열 존재");
+      }
+
+      // 있는 지 없는지만 찾고싶다
+      if (str.indexOf("id")) {
+      }
+
+      // 문자열 추출하기
+      let str1 = "stringify";
+      //slice(start, end) end까지 (end는 미포함)
+      console.log(str.slice(0, 5)); //strin
+      console.log(str.slice(2)); //ringify
+      console.log(str.slice(-4, -1)); // gif
+
+      alert("Österreich" > "Zealand"); // true (Österreich는 오스트리아를 독일어로 표기한 것임 - 옮긴이)
+    </script>
+  </body>
+</html>

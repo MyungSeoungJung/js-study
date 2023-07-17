@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = 1.23456;
+      //버림 (floor): 매개변수 값과 동일하거나 작은 가장 큰 정수
+      console.log(Math.floor(num));
+      console.log(Math.floor(num * 100));
+      console.log(Math.floor(-2.4));
+
+      //소수점 자르기
+      Math.trunc(num);
+
+      // 반올림 (round)
+      // 문자열 변환에는 숫자.Fixed(자릿수)
+      console.log(Math.round(num * 100));
+      console.log(+(num * 100).toFixed(2));
+
+      //0~1 랜덤숫자 (1미포함)
+      // 0.12341525123
+      // 1 ~ 100까지 랜덤숫자
+      // 1 ~ 100 랜덤숫자 (100 미포함)
+      // 0~99.9399234
+      Math.random() * 100;
+      // 1 ~ 100.99799
+      Math.floor(Math.random() * 100 + 1);
+
+      // 제곱연산
+      Math.pow(2, 10);
+      2 ** 10;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 백틱은 줄 바꿈가능
+      let guestList = `손님:
+    * John
+    * Pete
+    * Mary
+         `;
+
+      //문자열의 길이
+      const aa = "aaaa";
+      console.log(aa.length);
+
+      //특정 인덱스 글자 적근
+      //배열처럼 사용한다
+      const str = "abc";
+      console.log(str[1]);
+
+      // for ..of
+      // 반복가능한 객체,배열,문자열..
+      // for(변수 of iterable)
+      // 변수에 인덱스 위치의 값
+      for (let char of "Hello") {
+        console.log(char);
+      }
+    </script>
+  </body>
+</html>

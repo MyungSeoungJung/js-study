@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 15];
+      // sort의 넘기는 함수
+      // 첫번째 매개변수가 작을때 음수 반환
+      // 클때 양수 반환
+      // 정순 정렬(0,1,2.....9)
+      // a가 작고,b가 큼, 이럴때 - 이러면 a가 앞에 옴
+      // a가 크고 b가 작음 이럴때 - a가 앞에 옴(역순,큰게 앞에 옴)
+      arr.sort((a, b) => a - b); //정순
+      arr.sort((a, b) => b - a); //역순
+      console.log(arr);
+
+      // 문자열 정렬
+      let strArr = ["pete", "john", "Mary"];
+      strArr.sort((a, b) => a.localeCompare(b));
+      console.log(strArr);
+
+      // 이름 기준 정렬
+      // 이름이 사전식으로 앞쪽에 있는게 앞쪽으로 오고 싶어 (정순 정렬)
+      // a가 사전식의 앞이고 앞쪽
+      let user = [
+        { id: 1, name: "pete" },
+        { id: 2, name: "john" },
+        { id: 3, name: "Mary" },
+      ];
+
+      user.sort((a, b) => a.name.localeCompare(b.name));
+
+      console.log(user);
+
+      console.log("---------------------");
+      let names = "Bilbo,Gandalf,Nazgul";
+      // 구분자로 나눠서 배열을 만듬------------------------------------
+      const nameArr = names.split(",");
+      console.log(nameArr);
+
+      // 배열 요소 사이에 구분자를 넣어 문자열로-------------------------
+      const joinedArr = nameArr.join(";");
+      console.log(joinedArr);
+
+      const userNames = user.map((user) => user.name).join(",");
+
+      document
+        .querySelector("body")
+        .insertAdjacentHTML("afterbegin", `<div>${userNames}</div>`);
+
+      // ---------------------reduce(누산기)------------------------------------------------
+
+      let arrNumber = [1, 2, 3, 4, 5];
+      // (accumulator,item,index,array) =>
+      //누산기 (sum += item) 누적해서 더해서 저장
+
+      //reduce(계산할 함수, 초깃값);
+      // 1회 반복일때는: sum <= 0 , num <= 1 => sum: 1
+      // 2회 반복: sum <= 1 , num <= 2 => sum: 3
+      const result = arrNumber.reduce((sum, num) => sum + num, 0);
+      // arr.sum(요소마다 실행할 함수)
+
+      // ---------------------some------------------------------------------------
+      // 함수의 반환이 true이면
+      // 조건에 맞는 요소가 있음
+      // true이면 찾은 것
+      const res1 = user.some((user) => user.name === "john");
+      const res2 = user.some((user) => user.id > 2);
+      console.log(res1);
+      console.log(res2);
+    </script>
+  </body>
+</html>

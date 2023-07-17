@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["orange", "kiwi", "kiwi", "apple"];
+
+      // 배열을 Set으로 변환
+      // 배열 요소의 중복을 제거
+      const set = new Set(arr);
+
+      // Set을 배열로 변환
+      let reducedArr = Array.from(set);
+      console.log(reducedArr.join(", "));
+
+      const arr1 = [1, 2, 2, 3, 4, 4, 5];
+
+      const setArr = new Set(arr1);
+      console.log(setArr);
+
+      // A와B를 합치고 중복 없애기
+      const A = [1, 2, 3, 4, 5];
+      const B = [4, 5, 6, 7, 8];
+      let setA = new Set(A);
+      let setB = new Set(B);
+      let intersection = [...setA].filter((x) => setB.has(x));
+      // set 배열로 바꾸기
+      let changeArr = Array.from(concatAB);
+      console.log(changeArr);
+    </script>
+  </body>
+</html>
