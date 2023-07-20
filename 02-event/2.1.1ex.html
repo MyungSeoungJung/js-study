@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h2 {
+      cursor: pointer;
+      /* 텍스트 선택 (색칠)이 안됨 */
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    i {
+      color: green;
+      font-style: normal;
+      margin-right: 0.5rem;
+      /* 돌릴려면 inline-block 사용해야함 */
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+  </style>
+  <body>
+    <h2><i>▶</i>SWeeties(Click me)</h2>
+    <ul hidden>
+      <li>Cake</li>
+      <li>Donut</li>
+      <li>Honey</li>
+    </ul>
+
+    <script src="2.1.1.ex.js"></script>
+  </body>
+</html>

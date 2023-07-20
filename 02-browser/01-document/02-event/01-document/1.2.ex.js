@@ -3,7 +3,7 @@ console.log("run");
 // let table = document.getElementById('age-table')
 const ageTable = document.getElementById("age-table");
 console.log(ageTable);
-// agetable.getElementsByTagName('label')
+//            age.table.getElementsByTagName('label')
 const allLable = ageTable.querySelectorAll("label")
 console.log(allLable);
 const firstTd = ageTable.querySelectorAll("table > tbody tr:first-of-type > td:first-child");

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="main page"></body>
+  <script>
+    // 클래스 전체를 문자열로 조회
+    console.log(document.body.className);
+    console.log(document.body.classList);
+
+    // 클래스 추가
+    document.body.classList.add("article");
+    // 클래스 존재여부 (true/false)
+    console.log(document.body.classList.contains("article"));
+
+    // 클래스 제거
+    document.body.classList.remove("article");
+    console.log(document.body.className);
+
+    // 클래스 토글
+    if (document.body.classList.contains("article")) {
+      document.body.classList.remove("article");
+    } else {
+      document.body.classList.add("article");
+    }
+    console.log(document.body.className);
+
+    document.body.classList.toggle("article");
+    console.log(document.body.className);
+
+    document.body.setAttribute("style", "color:red; background-color:red");
+  </script>
+</html>
