@@ -28,10 +28,10 @@ btn.addEventListener("click",() => {
   // 밑에 선택된 애들 밀어 넣기
   const div = document.createElement("div");
 
-  for(let i = 0; i > checkInput.length; i++){
-    div.textContent = radioarr[i].value;
+  for (let i = 0; i < checkarr.length; i++) {
+    const checkedItem = checkarr[i].value;
+    const radioValue = radioarr[i] ? radioarr[i].value : "";
+    div.textContent = `${checkedItem} & ${radioValue}`;
+    containDiv.appendChild(div.cloneNode(true));
   }
-  containDiv.append(div);
-  
-
-})
+});
