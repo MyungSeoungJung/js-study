@@ -6,12 +6,29 @@
     <title>Document</title>
   </head>
   <body class="main page">
-    <script>
-      for (let name of document.body.classList) {
-        alert(name); // main과 page가 출력됨
+    <style>
+      body * {
+        margin: 10px;
+        border: 1px solid blue;
       }
-    </script>
-  </body>
+    </style>
 
+    <form>
+      FORM
+      <div>
+        DIV
+        <p>P</p>
+      </div>
+    </form>
+  </body>
+  <script>
+    const form = document.querySelector("form");
+
+    form.addEventListener("click", (e) => {
+      const name = e.target.tagName;
+      if (name === "Form") {
+        alert("fff");
+      }
+    });
   </script>
 </html>

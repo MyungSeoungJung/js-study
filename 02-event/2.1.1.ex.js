@@ -7,3 +7,4 @@
     list.hidden = !list.hidden
     arrow.style.transform = !list.hidden ? "rotate(90deg)" : "rotate(0deg)";
    });
+ㄴ

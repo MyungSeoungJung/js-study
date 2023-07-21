@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form action = "URL(unified resource locator)" -->
+    <!-- action URL에 form값을 전달 -->
+    <!-- form의 값은 name 속성으로 구분하여 전달됨 
+      "https://search.naver.com/search.naver?query=입력값-->
+    <!-- ?name=value&name=value..... -->
+    <!-- x-www=form-urlencoded방식의 데이터 전달법 또는 query string, query parameter전달법이라고도 불림-->
+
+    <form id="naver-serarch" action="https://search.naver.com/search.naver">
+      <input type="text" name="query" />
+      <button>네이버 검색 결과 보기</button>
+    </form>
+    <hr />
+    <br />
+    <form id="meta-search" target="_blank">
+      <select>
+        <option value="google" selected>Google</option>
+        <option value="daum">Daum</option>
+        <option value="bing">Bing</option>
+      </select>
+      <input type="text" name="q" />
+      <button>검색 결과 보기</button>
+    </form>
+
+    <script src="4.4.submit.js"></script>
+  </body>
+</html>
