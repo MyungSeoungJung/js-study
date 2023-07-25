@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>연락처 관리 프로그램</h1>
+    <div>
+      <input type="text" id="contactName" placeholder="이름" />
+      <input type="text" id="contactPhone" placeholder="전화번호" />
+      <input type="text" id="contactEmail" placeholder="이메일" />
+      <button>추가</button>
+    </div>
+    <h2>저장된 연락처 리스트:</h2>
+    <ul id="contactList"></ul>
+    <div>
+      <!-- 왜 이 구역 요소들은 nth-of-type하면 null이 뜨는건지 모르겠음 -->
+      <input
+        type="text"
+        id="removeContactName"
+        placeholder="이름을 입력하세요"
+      />
+      <!-- 왜 여기 button태그는 null이 뜨는지 모르겠음-->
+      <button id="remove">삭제</button>
+    </div>
+
+    <script src="numberManagement.js"></script>
+  </body>
+</html>
