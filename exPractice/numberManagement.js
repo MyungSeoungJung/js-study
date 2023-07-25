@@ -1,3 +1,9 @@
+(()=> {
+  // fetch
+const response = await fetch("http://localhost:8080/contacts");
+const result = response.json();
+
+})();
 
 const nameInput = document.querySelector("div input:nth-of-type(1)");
 const phone = document.body.querySelector("div input:nth-of-type(2)");
