@@ -117,7 +117,8 @@ function createRow(name, phone, email, image) {
           )
         );
       form.reset();
-    });
+    }
+    );
     // 파일을 dataURL(base64)로 읽음
     reader.readAsDataURL(file.files[0]);
 
