@@ -1,8 +1,7 @@
 
 (()=> {
 fetch("http://localhost:8080/contacts").then(response => response.json()
-.then((result)=> {console.log(result);
-
+.then((result)=> {
   const tbody = document.querySelector("tbody");
 
 for(let item of result){
