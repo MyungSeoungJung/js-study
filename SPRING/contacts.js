@@ -68,13 +68,8 @@ function createRow(name, phone, email, image) {
       return;
     }
 
-    const reader = new FileReader();
-    // reader로 파일을 읽기가 완료되면 실행되면 이벤트 핸들러 함수
-    reader.addEventListener("load", async (e) => {
-      console.log(e);
-      // file -> base64 data-url
-      const image = e.target.result;
-
+    // 데이터를 서버에 전송하고, UI요소 생성
+    async function createContact(image) {
       /// --- 서버전송하면 UI 생성
 
       // 서버에 데이터를 전송
@@ -92,7 +87,7 @@ function createRow(name, phone, email, image) {
             email: email.value,
             name: name.value,
             phone: phone.value,
-            image,
+            image: image ? image : null,
           }),
         }
       );
@@ -118,9 +113,26 @@ function createRow(name, phone, email, image) {
         );
       form.reset();
     }
-    );
-    // 파일을 dataURL(base64)로 읽음
-    reader.readAsDataURL(file.files[0]);
+
+    if (file.files[0]) {
+      // 파일이 있을 때
+      const reader = new FileReader();
+      // reader로 파일을 읽기가 완료되면 실행되면 이벤트 핸들러 함수
+      reader.addEventListener(
+        "load",
+        async (e) => {
+          console.log(e);
+          // file -> base64 data-url
+          const image = e.target.result;
+          createContact(image);
+        }
+      );
+      // 파일을 dataURL(base64)로 읽음
+      reader.readAsDataURL(file.files[0]);
+    } else {
+      // 파일이 없을 때
+      createContact();
+    }
 
     // return;
   });
