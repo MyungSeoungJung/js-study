@@ -21,13 +21,13 @@ return li;
 
 let currentPage = 0; // 현재 페이지 번호
 let isLastPage = false; // 마지막 페이지 인지 여부
-const PAGE_SIZE = 10; // 고정된 페이지 사이즈
+const PAGE_SIZE = 9; // 고정된 페이지 사이즈
 let currentQuery = ""; // 현재 검색 키워드
 
 async function getPagedList(page, query) {
   let url = "";
   // 검색 조건이 있다.
-  if (query) {
+  if (query) { // query로 url특정해도 어떻게 되는지
     url = `http://localhost:8080/posts/paging/search?page=${page}&size=${PAGE_SIZE}&query=${query}`;
   } else {
     url = `http://localhost:8080/posts/paging?page=${page}&size=${PAGE_SIZE}`;
@@ -327,5 +327,4 @@ ul.addEventListener("click",(e)=> {
 
 
 // -------------------수정--------------------------
-
 
