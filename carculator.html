@@ -1,0 +1,416 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="google-site-verification"
+      content="fx_0AC3TdPwloxGKaa_bpEvv9AjCfUFG3OPC5DgTp1U"
+    />
+    <title>기초 대사량 계산기</title>
+    <meta
+      name="keywords"
+      content="비트코인 계산기,암호화폐 계산기,가상화폐 계산기,비트코인 수익,암호화폐 수익,목표수익,목표수익 계산,수익률 계산기,수익률 구하기,복리,
+          기간 수익,수익 계획,복리계산기,일복리계산기,기간별 계산기,비트코인,비트코인 수익률,비트코인 복리계산기,누적 수익 계산기, 수익 계산기, 칼로리 계산기, 기초대사량 계산기, 기초대사량, 섭취 칼로리 계산기, 섭취 영양소 계산기, 로또, 로또분석, 로또번호분석, 로또번호생성, 로또예상번호, 평군단가계산기, 주식평단계산, 주식평균단가"
+    />
+    <meta
+      name="description"
+      content="유용한 기능 계산기 모음, 복리계산기, 수익 계산기, 칼로리 계산기, 기초대사량 계산기, 섭취 영양소 계산기, 로또, 로또분석, 로또번호분석, 로또번호생성, 로또예상번호, 평군단가계산기, 주식평단계산, 주식평균단가"
+    />
+    <meta name="author" content="ssajae" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="기초 대사량 계산기" />
+    <meta
+      property="og:description"
+      content="유용한 기능 계산기 모음, 복리계산기, 수익 계산기, 칼로리 계산기, 기초대사량 계산기, 섭취 영양소 계산기, 로또, 로또분석, 로또예상번호, 평군단가계산기, 주식평단계산, 주식평균단가"
+    />
+    <meta property="og:url" content="http://www.ssajaeweb.com" />
+    <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.ssajaeweb.com&amp;callback=_gfp_s_&amp;client=ca-pub-5512579228829225&amp;cookie=ID%3D5042ac7a5f382add-22f33bc6c1e200f6%3AT%3D1691380767%3ART%3D1691380767%3AS%3DALNI_Mb-Y95wbhqtdMZYu-zucH_Zl51j1g&amp;gpic=UID%3D00000c285ec86206%3AT%3D1691380767%3ART%3D1691380767%3AS%3DALNI_MaVjJviFBuF6hh5ZsfNgDWiVMzihA"></script>
+    <script
+      src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308010102/show_ads_impl_fy2021.js"
+      id="google_shimpl"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://www.ssajaeweb.com/libs/jquery.ui/jquery-ui.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://www.ssajaeweb.com/libs/bootstrap-4.3.1/css/bootstrap.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://www.ssajaeweb.com/libs/fontawesome/css/all.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://www.ssajaeweb.com/assist/css/head.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://www.ssajaeweb.com/assist/css/lft.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="http://www.ssajaeweb.com/assist/css/calc.css"
+    />
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5512579228829225"
+      crossorigin="anonymous"
+      data-checked-head="true"
+    ></script>
+
+    <meta
+      http-equiv="origin-trial"
+      content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="
+    />
+    <meta
+      http-equiv="origin-trial"
+      content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="
+    />
+  </head>
+  <body>
+    <ins
+      class="adsbygoogle adsbygoogle-noablate"
+      data-adsbygoogle-status="done"
+      style="display: none !important"
+      data-ad-status="unfilled"
+      ><div
+        id="aswift_0_host"
+        tabindex="0"
+        title="Advertisement"
+        aria-label="Advertisement"
+        style="
+          border: none;
+          height: 0px;
+          width: 0px;
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+          visibility: visible;
+          background-color: transparent;
+          display: inline-block;
+        "
+      >
+        <iframe
+          id="aswift_0"
+          name="aswift_0"
+          style="
+            left: 0;
+            position: absolute;
+            top: 0;
+            border: 0;
+            width: undefinedpx;
+            height: undefinedpx;
+          "
+          sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+          frameborder="0"
+          marginwidth="0"
+          marginheight="0"
+          vspace="0"
+          hspace="0"
+          allowtransparency="true"
+          scrolling="no"
+          src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5512579228829225&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1691381060&amp;plat=1%3A8%2C2%3A8%2C3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=http%3A%2F%2Fwww.ssajaeweb.com%2Fcalc%2Fday_kcal&amp;ea=0&amp;pra=5&amp;wgl=1&amp;dt=1691381060815&amp;bpp=3&amp;bdt=30&amp;idt=10&amp;shv=r20230802&amp;mjsv=m202308010102&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D5042ac7a5f382add-22f33bc6c1e200f6%3AT%3D1691380767%3ART%3D1691380767%3AS%3DALNI_Mb-Y95wbhqtdMZYu-zucH_Zl51j1g&amp;gpic=UID%3D00000c285ec86206%3AT%3D1691380767%3ART%3D1691380767%3AS%3DALNI_MaVjJviFBuF6hh5ZsfNgDWiVMzihA&amp;nras=1&amp;correlator=4308447945705&amp;frm=20&amp;pv=2&amp;ga_vid=2073668154.1691381061&amp;ga_sid=1691381061&amp;ga_hid=735197644&amp;ga_fc=0&amp;u_tz=540&amp;u_his=3&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;adx=-12245933&amp;ady=-12245933&amp;biw=941&amp;bih=921&amp;scr_x=0&amp;scr_y=0&amp;eid=44759926%2C44759842%2C44759875%2C31076511%2C31076652%2C31076688%2C31076731%2C44795911&amp;oid=2&amp;pvsid=3629182819163731&amp;tmod=1137988991&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;ref=http%3A%2F%2Fwww.ssajaeweb.com%2Fcalc%2Fday_kcal&amp;fc=1920&amp;brdim=954%2C0%2C954%2C0%2C1920%2C0%2C974%2C1047%2C958%2C921&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=23&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=18"
+          data-google-container-id="a!1"
+          data-load-complete="true"
+        ></iframe></div
+    ></ins>
+    <div id="header">
+      <h1 class="col-12 py-2">
+        <a href="http://www.ssajaeweb.com/">SsaJae`s Web</a>
+      </h1>
+      <a id="openMenu" class="menu-bar" href="#"><i class="fas fa-bars"></i></a>
+    </div>
+    <div id="leftMenu" class="lft-menu">
+      <div class="lft-bg"></div>
+      <div id="inLeft" class="in-lft">
+        <div id="closeLeft" class="close-btn">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/calc/average_price"
+              >평균 단가 계산기</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/calc">복리 수익 계산기</a>
+          </li>
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/calc/day"
+              >수익 도달 일수 계산기</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/calc/double"
+              >목표금액 수익률 계산기</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/calc/coin"
+              >암호화폐 수익률 계산기</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/calc/day_kcal"
+              >기초 대사량 계산기</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="http://www.ssajaeweb.com/lotto">로또 번호 분석</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="col-12 py-4">기초 대사량 계산기</h1>
+      </div>
+      <div class="row">
+        <!--insert mob-->
+      </div>
+      <div class="row">
+        <div class="col-12 py-2">
+          <form name="calc_frm" class="calc-form" method="post">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">성별</span>
+              </div>
+              <select name="gender" class="custom-select">
+                <option selected="" value="">선택하세요</option>
+                <option value="M" selected="">남성</option>
+                <option value="W">여성</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">나이(만)</span>
+              </div>
+              <input
+                type="number"
+                name="age"
+                class="form-control text-right"
+                placeholder="숫자만 입력"
+                aria-label="숫자만 입력"
+                value="27"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">세</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">키(cm)</span>
+              </div>
+              <input
+                type="text"
+                name="cm"
+                class="form-control text-right"
+                placeholder="소수점 가능"
+                aria-label="소수점 가능"
+                value="179"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">cm</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">몸무게(kg)</span>
+              </div>
+              <input
+                type="text"
+                name="kg"
+                class="form-control text-right"
+                placeholder="소수점 가능"
+                aria-label="소수점 가능"
+                value="76"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">kg</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">활동량</span>
+              </div>
+              <select name="activity" class="custom-select">
+                <option selected="" value="">선택하세요</option>
+                <option value="A">하 (좌식 생활 및 운동 안함)</option>
+                <option value="B" selected="">
+                  중하 (활동량 보통 및 주 1-3회 운동)
+                </option>
+                <option value="C">
+                  중 (활동량이 다소 많거나 주 3-5회 운동)
+                </option>
+                <option value="D">중상 (활동량이 많거나, 주 6-7회 운동)</option>
+                <option value="E">
+                  상 (활동량이 매우 많거나, 매일 하루 2번 운동)
+                </option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">목표</span>
+              </div>
+              <select name="goal" class="custom-select">
+                <option selected="" value="">선택하세요</option>
+                <option value="">유지</option>
+                <option value="D" selected="">벌크업</option>
+                <option value="A">다이어트 (주 0.25kg감량 목표)</option>
+                <option value="B">다이어트 (주 0.5kg감량 목표)</option>
+                <option value="C">다이어트 (주 1kg감량 목표)</option>
+              </select>
+            </div>
+
+            <div class="custom-control custom-checkbox float-right mb-3">
+              <input
+                type="checkbox"
+                name="save_cookie"
+                id="save_cookie"
+                value="1"
+                class="custom-control-input"
+              />
+              <label class="custom-control-label" for="save_cookie"
+                >쿠키를 사용하여 7일간 저장</label
+              >
+            </div>
+
+            <button
+              type="button"
+              id="goCalc"
+              class="btn btn-secondary btn-lg btn-block"
+            >
+              계산하기
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <!--insert mob-->
+      </div>
+      <div class="row">
+        <div class="col-12 py-2">
+          <h6 class="text-center">일일 유지 칼로리 : 기초대사량 * 활동량</h6>
+          <h6 class="text-center">일일 목표 칼로리 : 유지 칼로리 * 목표</h6>
+        </div>
+        <div class="col-12 py-2">
+          <h5 class="text-center">일일 유지 칼로리</h5>
+          <h4 class="text-center">약 : 2,508 kcal</h4>
+          <h6 class="text-center">(해리스 베네딕트 방정식 기준)</h6>
+        </div>
+        <div class="col-12 py-2">
+          <h5 class="text-center">일일 목표 칼로리</h5>
+          <h4 class="text-center">약 : 3,010 kcal</h4>
+        </div>
+        <div class="col-12 py-2">
+          <h5 class="text-center">하루 섭취 필요 영양소 (탄,단,지)</h5>
+          <p class="text-center">탄수화물 : 1,505kcal / 376.19g</p>
+          <p class="text-center">단백질 : 602kcal / 136.80 ~ 150.48g</p>
+          <p class="text-center">지방 : 903kcal / 100.32g</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+      $(document).ready(function () {
+        $("#goCalc").on("click", function () {
+          var jqForm = $("[name='calc_frm']");
+          jqForm.submit();
+        });
+
+        $("[name='cm'], [name='kg']").on("keyup", function (e) {
+          var jqThis, sStr, sPatternEng, sPatternKor, sPatternSpecial;
+
+          jqThis = $(this);
+          sStr = jqThis.val();
+          sPatternEng = /[a-zA-Z]/g;
+          sPatternKor = /[ㄱ-ㅎ가-힣]/g;
+          sPatternSpecial = /[!@#$%^*()\-_=+\\\|\[\]{};:\'",<>\/?]/g;
+
+          if (
+            sPatternEng.test(sStr) ||
+            sPatternKor.test(sStr) ||
+            sPatternSpecial.test(sStr)
+          ) {
+            jqThis.val(sStr.replace(/[^0-9]/g, ""));
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#openMenu").on("click", function (e) {
+          e.preventDefault();
+
+          $("#leftMenu").show();
+          $("#inLeft").animate(
+            {
+              left: 0,
+            },
+            200
+          );
+        });
+
+        $("#closeLeft, .lft-bg").on("click", function (e) {
+          e.preventDefault();
+
+          $("#inLeft").animate(
+            {
+              left: "-60%",
+            },
+            200,
+            function () {
+              $("#leftMenu").hide();
+            }
+          );
+        });
+      });
+    </script>
+
+    <iframe
+      src="https://www.google.com/recaptcha/api2/aframe"
+      width="0"
+      height="0"
+      style="display: none"
+    ></iframe>
+  </body>
+</html>
